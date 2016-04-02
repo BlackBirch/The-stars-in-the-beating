@@ -1,0 +1,39 @@
+.star i {
+	display: block; 
+	width: 80px; 
+	height: 80px;
+	background-image: url("anim-fav.png");
+	background-position: 0px 0px;
+}
+
+@keyframes dump{
+	from{
+		background-position: 0px 0px;
+	}
+	to{
+		background-position: -1040px 0px;
+	}
+}
+
+@-webkit-keyframes dump{
+	from{
+		background-position: 0px 0px;
+	}
+	to{
+		background-position: -1040px 0px;
+	}
+}
+@-moz-keyframes dump{
+	from{
+		background-position: 0px 0px;
+	}
+	to{
+		background-position: -1040px 0px;
+	}
+}
+
+.star i:hover {
+	animation: dump 1.5s steps(13) infinite 0s ;
+	-webkit-animation:  dump 1.5s steps(13) infinite 0s ;
+	-moz-animation:  dump 1.5s steps(13) infinite 0s ;
+};
